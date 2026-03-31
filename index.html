@@ -2,94 +2,492 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Carnatic Recital Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnatic Music Recital - Lyrics</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fcf8f2; }
+        header { text-align: center; padding: 30px 0; border-bottom: 2px solid #8b4513; margin-bottom: 30px; }
+        h1 { color: #8b4513; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
+        .search-container { position: sticky; top: 0; background: #fcf8f2; padding: 15px 0; z-index: 100; border-bottom: 1px solid #eee; }
+        #songSearch { width: 100%; padding: 15px; font-size: 16px; border: 2px solid #d2b48c; border-radius: 8px; box-sizing: border-box; outline: none; }
+        #songSearch:focus { border-color: #8b4513; box-shadow: 0 0 5px rgba(139, 69, 19, 0.2); }
+        .song-card { background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-left: 6px solid #a0522d; transition: transform 0.2s; }
+        .song-title { color: #a0522d; margin: 0 0 5px 0; font-size: 1.5em; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; }
+        .song-meta { font-size: 0.95em; color: #666; font-weight: bold; margin-bottom: 20px; display: flex; gap: 20px; }
+        .lyrics { white-space: pre-wrap; font-size: 1.1em; color: #2c3e50; line-height: 1.8; }
+        .section-tag { font-weight: bold; color: #8b4513; display: block; margin-top: 15px; font-size: 0.8em; text-transform: uppercase; letter-spacing: 1px; }
+        .madhyamakalam { color: #2e7d32; font-style: italic; border-left: 2px solid #2e7d32; padding-left: 10px; margin: 10px 0; }
+        .hidden { display: none; }
+        .no-results { text-align: center; color: #999; margin-top: 50px; font-style: italic; }
+    </style>
 </head>
 <body>
 
-    <section>
-        <h1>sri gaNanAtham</h1>
-        <p>ragam: ishamanOhari talam: rUpakam [cite: 1]</p>
-        
-        <h2>pallavi</h2>
-        <p>sri gaNanAtham bhajare chitta parAshakti yutam [cite: 1]</p>
+<header>
+    <h1>Carnatic Recital</h1>
+    <p>Complete Lyrics & Program Details</p>
+</header>
 
-        <h2>anupallavi</h2>
-        <p>nAga yagna sutra dharam nAda layA nandakaram [cite: 1]</p>
+<div class="search-container">
+    <input type="text" id="songSearch" placeholder="Search by song name, ragam, or lyrics...">
+</div>
 
-        <h2>caraNam</h2>
-        <p>AgamAdi sannutam akhila loka poojitam [cite: 1]<br>
-        yogishAli sevitam bhogishAli bhAvitam [cite: 1]</p>
+<div id="songContainer">
+    <div class="song-card">
+        <h2 class="song-title">sri gaNanAtham</h2>
+        <div class="song-meta"><span>Ragam: ishamanOhari</span> <span>Talam: rUpakam</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            sri gaNanAtham bhajare chitta parAshakti yutam
+            <span class="section-tag">anupallavi</span>
+            nAga yagna sutra dharam nAda layA nandakaram
+            <span class="section-tag">caraNam</span>
+            AgamAdi sannutam akhila loka poojitam
+            yogishAli sevitam bhogishAli bhAvitam
+            <div class="madhyamakalam">
+            rAgadweshAdirahita ramaNeeya hrudaya muditam
+            sriguruguha sanmuditam chinmoola kamalAsthitam
+            </div>
+        </div>
+    </div>
 
-        <h2>madhyamakAlam</h2>
-        <p>rAgadweshAdirahita ramaNeeya hrudaya muditam [cite: 1]<br>
-        sriguruguha sanmuditam chinmoola kamalAsthitam [cite: 1]</p>
-    </section>
+    <div class="song-card">
+        <h2 class="song-title">srl guru guha tArayASumAm</h2>
+        <div class="song-meta"><span>Ragam: devakriya</span> <span>Talam: rUpakam</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            srl guruguha tArayASu mAM SaravaNa bhava
+            surapati shripati rathipati vAgpati
+            kshithipati paSupati sEvita
+            <span class="section-tag">samashTi caraNam</span>
+            rAgAdi rahita hrudaya vibhAvita
+            sura muni poojita
+            tyAgAdi rAja kumara tApatraya hara kumAra
+            <div class="madhyamakalam">
+            yogirAja vinuta pAda bhoodeva kriyA mOda
+            yOgirAja yogabhEda yukta manOlaya vinOda
+            </div>
+        </div>
+    </div>
 
-    <hr>
+    <div class="song-card">
+        <h2 class="song-title">rAmacandraM bhAvayAmi</h2>
+        <div class="song-meta"><span>Ragam: vasanta</span> <span>Talam: rUpakam</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            rAmacandraM bhAvayAmi
+            raghukula tilakaM upendram
+            <span class="section-tag">anupallavi</span>
+            bhUmijA nAyakaM bhukti mukti dAyakaM
+            nAma klrtana tArakaM nara varangata mAyikam
+            <span class="section-tag">caraNam</span>
+            sAkEta nagarE nivasantaM
+            sAmrAjya prada hanumantaM
+            rAkendu vadanaM bhagavantaM
+            ramaNIya kalyANa guNavantaM
+            <div class="madhyamakalam">
+            kAkutsthaM dhImantaM
+            kamalAkshaM SrImantaM
+            nAkeSa nutaM anantaM
+            nara guru guha viharantam
+            </div>
+        </div>
+    </div>
 
-    <section>
-        <h1>srl guru guha tArayASumAm</h1>
-        <p>ragam: devakriya talam: rUpakam [cite: 1]</p>
+    <div class="song-card">
+        <h2 class="song-title">AnandAmrutakarshini</h2>
+        <div class="song-meta"><span>Ragam: amrutavarshini</span> <span>Talam: adi</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            AnandAmrutAkarshiNi amruta varshiNi
+            harAdi poojitE SivE bhavAni
+            <span class="section-tag">samashTi caraNam</span>
+            sree nandanAdi samrakshiNi sri guruguha janani chidroopiNi
+            <div class="madhyamakalam">
+            sAnanda hrudayE nilayE sadayE satya suvrushti hetavE tvAm
+            santatam chintayE amruteshvari salilam varshaya varshaya varshaya
+            </div>
+        </div>
+    </div>
 
-        <h2>pallavi</h2>
-        <p>srl guruguha tArayASu mAM SaravaNa bhava [cite: 1]<br>
-        surapati shripati rathipati vAgpati [cite: 1]<br>
-        kshithipati paSupati sEvita [cite: 1]</p>
+    <div class="song-card">
+        <h2 class="song-title">annapurne visAlAkshi</h2>
+        <div class="song-meta"><span>Ragam: sama</span> <span>Talam: adi</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            annapUrNE vishAlAkshi raksha akhila bhuvana sAkshi kaTAkshi
+            <span class="section-tag">anupallavi</span>
+            unnata garta tIra vihAriNi OMkAriNi duritaAdi nivAriNi
+            <div class="madhyamakalam">
+            pannagaAbharaNa rAjni purANi paramEshvara vishvEshvara bhAsvari
+            </div>
+            <span class="section-tag">charaNam</span>
+            pAyasAnna pUrita mANikya pAtra hEma darvI vidhRta karE
+            kAyajAdi rakshaNa nipuNa tarE kAnchanamaya bhUshaNAmbara dharE
+            <div class="madhyamakalam">
+            tOyajAsanAdi sEvita parE tumburu nAradAdi nuta varE
+            trayAtIta mOksha prada chaturE tripada shObhita guruguha sAdarE
+            </div>
+        </div>
+    </div>
 
-        <h2>samashTi caraNam</h2>
-        <p>rAgAdi rahita hrudaya vibhAvita [cite: 1]<br>
-        sura muni poojita [cite: 1]<br>
-        tyAgAdi rAja kumara tApatraya hara kumAra [cite: 1]</p>
+    <div class="song-card">
+        <h2 class="song-title">santAnagopAla krishnam</h2>
+        <div class="song-meta"><span>Ragam: kamAs</span> <span>Talam: rUpakam</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            santAnagOpAla kRshNaM upAsmahE srI
+            <span class="section-tag">anupallavi</span>
+            santAna saubhAgya vitaraNa nipuNa taram
+            <div class="madhyamakalam">
+            santatam sad-guruguha sannutam sArasa karam
+            </div>
+            <span class="section-tag">charaNam</span>
+            srI rukmiNI satyabhAmA samEtam
+            arjuna prEmAspadam ASrita jana phaladam
+            <div class="madhyamakalam">
+            nartana muraLI dharam nata shuka sanaka nAradam
+            nIrajAsanaAdi nutam nIla mEgha jita gAtram
+            </div>
+        </div>
+    </div>
 
-        <h2>madhyamakAlam</h2>
-        <p>yogirAja vinuta pAda bhoodeva kriyA mOda [cite: 1]<br>
-        yOgirAja yogabhEda yukta manOlaya vinOda [cite: 1]</p>
-    </section>
+    <div class="song-card">
+        <h2 class="song-title">kanjadaLAyatAkSi</h2>
+        <div class="song-meta"><span>Ragam: kamalAmanohari</span> <span>Talam: Adi</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            kanja daLAyatAkshi kAmAkshi
+            kamalA manOhari tripura sundari
+            <span class="section-tag">anupallavi</span>
+            kunjara gamanE maNi maNDita manjuLa caraNE
+            mAmava Siva panjara Suki pankaja mukhi
+            guru guha ranjani durita bhanjani niranjani
+            <span class="section-tag">charaNam</span>
+            rAkA SaSi vadanE su-radanE
+            rakshita madanE ratna sadanE
+            srI kAncana vasanE su-rasanE
+            sRngArASraya manda hasanE
+            ekAnEkAkshari bhuvanESvari
+            ekAnandAmRta jhari bhAsvari
+            ekAgra manO-layakari SrIkari
+            ekAmrESa gRhESvari Sankari
+        </div>
+    </div>
 
-    <hr>
+    <div class="song-card">
+        <h2 class="song-title">sri varalakshmi namastubhyam</h2>
+        <div class="song-meta"><span>Ragam: sri</span> <span>Talam: rUpakam</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            srIvaralakshmi namastubhyam vasu pradE
+            srI sArasa padE rasa padE sapadE padE padE
+            <span class="section-tag">anupallavi</span>
+            bhAvaja janaka prANa vallabhE suvarNAbhE
+            bhAnu kOTi samAna prabhE bhakta sulabhE
+            <div class="madhyamakalam">
+            sEvaka jana pAlinyai shrita pankaja mAlinyai
+            kEvala guNa shAlinyai kEshava hRtkhElinyai
+            </div>
+            <span class="section-tag">charanam</span>
+            shrAvaNa paurNamI pUrvAstha shukravArE
+            chArumatI prabhRtibhih pUjitAkArE
+            dEvAdi guruguha samarpita maNimaya hArE
+            dIna jana samrakshaNa nipuNa kanaka dhArE
+            <div class="madhyamakalam">
+            bhAvanA bhEda chaturE bhAratI sannuta varE
+            kaivalya vitaraNa parE kA.ngkshita phala prada karE
+            </div>
+        </div>
+    </div>
 
-    <section>
-        <h1>rAmacandraM bhAvayAmi</h1>
-        <p>ragam: vasanta talam: rUpakam [cite: 1]</p>
+    <div class="song-card">
+        <h2 class="song-title">Venkatachalapate</h2>
+        <div class="song-meta"><span>Ragam: karNATaka KApi</span> <span>Talam: adi</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            vEnkaTAcala patE ninu nammiti vEgamE nanu rakshiyumayyA
+            <span class="section-tag">anupallavi</span>
+            pankajAsana pramukhAdi vinuta padamunASrayincina vArikella
+            <div class="madhyamakalam">
+            sankaTamulu tIrci sampadalicci mangaLaM porundiya pulivalattil viLangum
+            </div>
+            <span class="section-tag">charanam</span>
+            SrInivAsa SEshAcalamuninci SIghramAy vandu andhunikabhIshTa dAnamosagi
+            gOkarNa kshEtramulO nelakoni mRkaNDu munigaL mudalAna bhaktAnAm
+            abhaya vara pradAna caturatara ramApatE dayAnidhE
+            pratyakshamugAninda mAnilattil nin mahimai anEkam
+            <div class="madhyamakalam">
+            vAnavar vaNangum vAsudEvanE vAnchitArtha phalamiccu varadanE
+            dIna rakshakA pItAmbara dhara dEva dEva guruguhan mAmanAna
+            </div>
+        </div>
+    </div>
 
-        <h2>pallavi</h2>
-        <p>rAmacandraM bhAvayAmi [cite: 1]<br>
-        raghukula tilakaM upendram [cite: 2]</p>
+    <div class="song-card">
+        <h2 class="song-title">shvEtagaNapatim vandE</h2>
+        <div class="song-meta"><span>Ragam: amrutavarshini</span> <span>Talam: adi</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            shvEtagaNapatim vandE vAmadEva pratipAdyam anAdyam
+            <span class="section-tag">charanam</span>
+            bhUtagaNAdi samsEvitam buddha guruguha sambhAvitam
+            mAtaHNgamukham vallabhAsamEtam virAgacUDAmaNim
+        </div>
+    </div>
 
-        <h2>anupallavi</h2>
-        <p>bhUmijA nAyakaM bhukti mukti dAyakaM [cite: 2]<br>
-        nAma klrtana tArakaM nara varangata mAyikam [cite: 2]</p>
+    <div class="song-card">
+        <h2 class="song-title">pancha mAtanga mukha</h2>
+        <div class="song-meta"><span>Ragam: malahari</span> <span>Talam: rUpakam</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            panca mAtanga mukha gaNa patinA paripAlitO(a)haM sumukhEna SrI
+            <span class="section-tag">anupallavi</span>
+            panca bhUtAtmaka prapancOdayAdi karaNa
+            <div class="madhyamakalam">
+            virinci hari rudra nutEna panca vaktra Siva sutEna
+            </div>
+            <span class="section-tag">caraNam</span>
+            varadAbhaya pASa sRNi kapAla danta mOdaka mudgarAksha mAlA karENa
+            kamalA pura vihArENa puruhUtAdyakhila dEva pUjita vighnESvarENa
+            <div class="madhyamakalam">
+            vara guru guha sOdarENa surucira lambOdarENa
+            karUArdra gaura-tarENa kali mala haraNa caturENa
+            </div>
+        </div>
+    </div>
 
-        <h2>caraNam</h2>
-        <p>sAkEta nagarE nivasantaM [cite: 2]<br>
-        sAmrAjya prada hanumantaM [cite: 2]<br>
-        rAkendu vadanaM bhagavantaM [cite: 2]<br>
-        ramaNIya kalyANa guNavantaM [cite: 2]</p>
+    <div class="song-card">
+        <h2 class="song-title">gaṇarājēna rakṣitōham</h2>
+        <div class="song-meta"><span>Ragam: Arabhi</span> <span>Talam: misra cāpu</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            gaṇarājēṉa rakṣitōhaṁ guṇijaṉaṉuta pallavapadēṉa
+            <span class="section-tag">samashTi caraNam</span>
+            aṇimādyaṣṭa-siddhippradēṉa māṇikyamakuṭādidharēṇa
+            mantriṇi pūjita sumukhēṉa mānitaguruguha vanditēṉa
+            <div class="madhyamakalam">
+            diṉakarakōṭipprakāśēṉa vinatāśritamandārēṇa
+            maṉupūjita pāśāṅkuśēṉa kāṉaṉasthita brahmmacaryēṇa
+            </div>
+        </div>
+    </div>
 
-        <h2>madhyamakAlam</h2>
-        <p>kAkutsthaM dhImantaM [cite: 2]<br>
-        kamalAkshaM SrImantaM [cite: 2]<br>
-        nAkeSa nutaM anantaM [cite: 2]<br>
-        nara guru guha viharantam [cite: 2]</p>
-    </section>
+    <div class="song-card">
+        <h2 class="song-title">mahAgaNapatE pAlayashumAm</h2>
+        <div class="song-meta"><span>Ragam: naTanArAyaNi</span> <span>Talam: adi</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            mahAgaNapatE pAlayAshumAm mAyAmaya vallabhApatE shrI
+            <span class="section-tag">caraNam</span>
+            mahA naTa nArAyaNI nandana mAnita dEva dEvakI nandana
+            mahEshvara guruguha bhakta candana mAtanga vadanEndrAdi vandana
+        </div>
+    </div>
 
-    <hr>
+    <div class="song-card">
+        <h2 class="song-title">gaNEsha kumAra pAhimAm</h2>
+        <div class="song-meta"><span>Ragam: amrutavarshini</span> <span>Talam: adi</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            gaNEsha kumAra pAhimAm gajamukha
+            <span class="section-tag">charanam</span>
+            manOratha siddhidAyaka gamapadAdinuta bhava
+            shrI guruguhahita gajamukha
+        </div>
+    </div>
 
-    <section>
-        <h1>AnandAmrutakarshini</h1>
-        <p>ragam: amrutavarshini talam: adi [cite: 2]</p>
+    <div class="song-card">
+        <h2 class="song-title">Anandanatana prakasham</h2>
+        <div class="song-meta"><span>Ragam: karnataka kapi</span> <span>Talam: adi</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            Ananda naTana prakAsham citsabhesham AshrayAmi shivakAmavallIsham
+            <span class="section-tag">anupallavi</span>
+            bhAnu koTi koTi sankAsham bhukti mukti prada daharAkAsham
+            dIna jana samrakshaNa caNam divya patanjali vyAghrapAda darshita kuncitAbja caraNam
+            <span class="section-tag">charanam</span>
+            shItAmshu gangAdharam nIlakandharam shrI kEdArAdi kshEtrAdhAram
+            bhUtesham shArdUla carmAmbaram cidambaram bhUsura trisahasra munIshvaram
+            vishveshvaram navanIta hRdayam sadaya guruguha tAtamAdyam
+            veda vedyam vIta rAgiNamaprameyAdvaita pratipAdyam
+            sangIta vAdya vinoda tANDava jAta bahutara bheda codyam
+        </div>
+    </div>
 
-        <h2>pallavi</h2>
-        <p>AnandAmrutAkarshiNi amruta varshiNi [cite: 2]<br>
-        harAdi poojitE SivE bhavAni [cite: 2]</p>
+    <div class="song-card">
+        <h2 class="song-title">shri kAlahastIsha</h2>
+        <div class="song-meta"><span>Ragam: huseni</span> <span>Talam: jhampa</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            shrI kAlahastIsha shrita janAvana samIrAkAra mAm pAhi rAjamauLe ehi
+            <span class="section-tag">anupallavi</span>
+            pAkAri vidhi hari prANamaya koshAnilAkAsha bhUmi salilAgni prakAsha shiva
+            <span class="section-tag">charanam</span>
+            jnAnaprasUnAmbikA pate bhaktAbhimAna dakshiNa kailAsa vAsa
+            abhIShTa dAna catura karAbja dIna karuNAnidhe sUna shara sUdaneshAna
+            bhava pashupate jnAna guruguha saccidAnandamaya mUrte
+            hIna jAti kirAtakena pUjita kIrte
+        </div>
+    </div>
 
-        <h2>samashTi caraNam</h2>
-        <p>sree nandanAdi samrakshiNi sri guruguha janani chidroopiNi [cite: 2]</p>
+    <div class="song-card">
+        <h2 class="song-title">aruNAcalanAtham</h2>
+        <div class="song-meta"><span>Ragam: sArangA</span> <span>Talam: rUpakam</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            aruNAcalanAtham smarAmi anisham apIta kucAmbA sametam
+            <span class="section-tag">anupallavi</span>
+            smaraNAt kaivalya prada caraNAravindam
+            taruNAditya koTi sankAsha cidAnandam
+            karuNA rasAdi kandam sharaNAgata surabrndam
+            <span class="section-tag">charanam</span>
+            aprAkrta tejomaya lingam atyadbhuta kara dhrta sArangam
+            aprameyam aparNAbja bhrngam ArUDhottunga vrSha turangam
+            viprottama vishEShAntarangam vIra guruguha tAra prasangam
+            svapradIpa mauLi vidhrta gangam svaprakAsha jita somAgni patangam
+        </div>
+    </div>
 
-        <h2>madhyamakAlam</h2>
-        <p>sAnanda hrudayE nilayE sadayE satya suvrushti hetavE tvAm [cite: 2]<br>
-        santatam chintayE amruteshvari salilam varshaya varshaya varshaya [cite: 2]</p>
-    </section>
+    <div class="song-card">
+        <h2 class="song-title">jambUpate</h2>
+        <div class="song-meta"><span>Ragam: yamunA kalyANi</span> <span>Talam: rUpakam</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            jambUpate mAm pAhi nijAnanda amrta bodham dEhi
+            <span class="section-tag">anupallavi</span>
+            ambujAsanAdi sakala dEva namana tumburu nuta hRdaya tApopashamana
+            ambudhi gangA kAvErI yamunA kambu kaNThyakhilANDEshvarI ramaNa
+            <span class="section-tag">charanam</span>
+            parvatajA prArthitAplinga vibho panca bhUtamaya prapanca prabho
+            sarva jIva dayAkara shambho sAmajATavI nilaya svayambho
+            sharva karuNAsudhA sindho sharaNAgata vatsalArta bandho
+            anirvacanIya nAda bindo nitya mauLi vidhrta gangEndo
+            nirvikalpaka samAdhi nishTha shiva kalpaka taro
+            nirvishESha caitanya niranjana guruguha guro
+        </div>
+    </div>
+
+    <div class="song-card">
+        <h2 class="song-title">cintaya mAkanda mUla kandam</h2>
+        <div class="song-meta"><span>Ragam: bhairavi</span> <span>Talam: rUpakam</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            cintaya mAkanda mUla kandam cetasshrI sOmAskandam
+            <span class="section-tag">anupallavi</span>
+            santatam akhaNDa saccidAnandam sAmrAjyaprada caraNAravindam
+            <span class="section-tag">charanam</span>
+            mangaLakara mandahAsa vadanam mANikya maya kAncI sadanam
+            anga saundarya vijita madanam antaka sUdanam kunda radanam
+            uttunga kamanIya vrSha turangam bhairavI prasangam
+            guruguhAntarangam prthvI lingam
+        </div>
+    </div>
+
+    <div class="song-card">
+        <h2 class="song-title">shrI pArvatI paramEshvarau</h2>
+        <div class="song-meta"><span>Ragam: bauli</span> <span>Talam: adi</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            shrI pArvatI paramEshvarau vandE
+            <div class="madhyamakalam">
+            cidbimbau lIlA vigrahau mamAbhIShTa siddhayE
+            </div>
+            <span class="section-tag">anupallavi</span>
+            ApAda-mastakAlankArau Adi madhyAnta rahitAkArau
+            sOpAna mArga mukhyAdhArau sukhapradau gandha rasAdharau
+            <span class="section-tag">charanam</span>
+            mangaLakara mandahAsa vadanam mANikya maya kAncI sadanam
+            anga saundarya vijita madanam antaka sUdanam kunda radanam
+            uttunga kamanIya vrSha turangam bhairavI prasangam
+            guruguhAntarangam prthvI lingam
+        </div>
+    </div>
+
+    <div class="song-card">
+        <h2 class="song-title">srI saraswathI hithE</h2>
+        <div class="song-meta"><span>Ragam: maanji</span> <span>Talam: adi</span></div>
+        <div class="lyrics">
+            <span class="section-tag">pallavi</span>
+            shrI sarasvatI hitE shivE cidAnandE shivasahitE
+            <span class="section-tag">anupallavi</span>
+            vAsavAdi mahitE vAsanAdi rahitE
+            <span class="section-tag">caraNam</span>
+            kAmakOTi nilayE karadhritha maNivalayE
+            kOmaLatara hrdayE guruguhOdayE mAmava sadayE
+        </div>
+    </div>
+
+    <div class="song-card">
+        <h2 class="song-title">guruguha sarasija</h2>
+        <div class="song-meta"><span>Ragam: shankarabharanam</span> <span>Talam: catusra Eka</span></div>
+        <div class="lyrics">
+            guruguha sarasija karapada shubhakaramUrtE suravara shivasuta bhuvanapatE
+            murahara harihaya vidhinuta bahuvidhakIrtE narapati natamuniyuta sumatE
+            nirupama jayakara niratishayasukhada sarasa satatamava stithatara shaktE
+            mucakunda varada tyAgarAja sundaratara pAdAravinda sarasa mandahAsa
+            vadana jaya vibhO mukunda pUjitAnga dhavaLa sundaratara nandIsha
+            surabrnda vandita guruguha gurO
+        </div>
+    </div>
+
+    <div class="song-card">
+        <h2 class="song-title">sOmAskandam svAnandakandam</h2>
+        <div class="song-meta"><span>Ragam: shankarabharanam</span> <span>Talam: catusra Eka</span></div>
+        <div class="lyrics">
+            sOmAskandam svAnandakandam kAmAkSIsham kalyANa vESam
+            sOmaskandam svAnandakandam sundarAngamAshrayAmi
+            gangAdharam tam gaurI samEtam shrngAra rUpam shrI sOma sUtram
+            gangAdharam tam gaurI samEtam guruguha rUpamAshrayAmi
+        </div>
+    </div>
+
+    <div class="song-card">
+        <h2 class="song-title">sadAsivajAyE vijayE</h2>
+        <div class="song-meta"><span>Ragam: shankarabharanam</span> <span>Talam: catusra Eka</span></div>
+        <div class="lyrics">
+            sadAsivajAyE vijayE sarasija padayugaLE sakaLE
+            vadana karAmbhOja tAraya shiva vAmAnkE varakara vidhrtashukE
+            sadayE guruguhasEvitE shashi shEkhara sambhAvitE
+            sudhArNava madhyagatE atilalitE shubhakara suranuta muraharamuditE
+            kamalAsana vandita padAbjE kamanIya karOdaya sAmrAjyE
+            kamalAnagarE sakalAkarE kamala nayana dhrta jagadAdhArE
+            kamalE vimalE guruguha janani kamalApatinuta hrdayE mAyE
+            kamala shashi vijaya vadanE amEyE kamalEndrANi vAgdEvi
+            shrI gauRIpUjita hrdayAnandE kamalAkSi pAhi kAmAkSi
+            kAmEshvarasati kalyANi
+        </div>
+    </div>
+
+    <div id="noResults" class="no-results hidden">No songs found matching your search.</div>
+</div>
+
+<script>
+    const searchInput = document.getElementById('songSearch');
+    const songCards = document.querySelectorAll('.song-card');
+    const noResults = document.getElementById('noResults');
+
+    searchInput.addEventListener('input', (e) => {
+        const term = e.target.value.toLowerCase();
+        let found = 0;
+
+        songCards.forEach(card => {
+            const content = card.textContent.toLowerCase();
+            if (content.includes(term)) {
+                card.classList.remove('hidden');
+                found++;
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+
+        if (found === 0) {
+            noResults.classList.remove('hidden');
+        } else {
+            noResults.classList.add('hidden');
+        }
+    });
+</script>
 
 </body>
 </html>
