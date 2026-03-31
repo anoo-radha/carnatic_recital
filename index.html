@@ -2,100 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carnatic Music Recital</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fdfaf6; }
-        header { text-align: center; padding: 30px 0; border-bottom: 2px solid #8b4513; margin-bottom: 30px; }
-        h1 { color: #8b4513; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
-        .search-container { position: sticky; top: 0; background: #fdfaf6; padding: 10px 0; z-index: 100; }
-        #songSearch { width: 100%; padding: 15px; font-size: 16px; border: 2px solid #d2b48c; border-radius: 8px; box-sizing: border-box; }
-        .song-card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 5px solid #a0522d; }
-        .song-title { color: #a0522d; margin: 0 0 5px 0; font-size: 1.4em; }
-        .song-meta { font-size: 0.9em; color: #666; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        .lyrics { white-space: pre-wrap; font-size: 1.05em; color: #2c3e50; }
-        .section { font-weight: bold; color: #8b4513; display: block; margin-top: 12px; font-size: 0.85em; text-transform: uppercase; }
-        .madhyama { color: #2e7d32; font-style: italic; }
-        .hidden { display: none; }
-    </style>
+    <title>Carnatic Recital Index</title>
 </head>
 <body>
 
-<header>
-    <h1>Carnatic Recital</h1>
-    <p>Program Lyrics & Information</p>
-</header>
+    <section>
+        <h1>sri gaNanAtham</h1>
+        <p>ragam: ishamanOhari talam: rUpakam [cite: 1]</p>
+        
+        <h2>pallavi</h2>
+        <p>sri gaNanAtham bhajare chitta parAshakti yutam [cite: 1]</p>
 
-<div class="search-container">
-    <input type="text" id="songSearch" placeholder="Search by song name, ragam, or lyrics...">
-</div>
+        <h2>anupallavi</h2>
+        <p>nAga yagna sutra dharam nAda layA nandakaram [cite: 1]</p>
 
-<div id="songContainer">
-    <div class="song-card">
-        <h2 class="song-title">Sri GaNanAtham</h2>
-        <div class="song-meta">Ragam: IshamanOhari | Talam: rUpakam</div>
-        <div class="lyrics">
-            <span class="section">Pallavi</span>
-            sri gaNanAtham bhajare chitta parAshakti yutam
-            <span class="section">Anupallavi</span>
-            nAga yagna sutra dharam nAda layA nandakaram
-            <span class="section">Charanam</span>
-            AgamAdi sannutam akhila loka poojitam
-            yogishAli sevitam bhogishAli bhAvitam
-            <span class="section">Madhyamakalam</span>
-            <span class="madhyama">rAgadweshAdirahita ramaNeeya hrudaya muditam
-            sriguruguha sanmuditam chinmoola kamalAsthitam</span>
-        </div>
-    </div>
+        <h2>caraNam</h2>
+        <p>AgamAdi sannutam akhila loka poojitam [cite: 1]<br>
+        yogishAli sevitam bhogishAli bhAvitam [cite: 1]</p>
 
-    <div class="song-card">
-        <h2 class="song-title">AnandAmrutakarshini</h2>
-        <div class="song-meta">Ragam: Amrutavarshini | Talam: Adi</div>
-        <div class="lyrics">
-            <span class="section">Pallavi</span>
-            AnandAmrutAkarshiNi amruta varshiNi
-            harAdi poojitE SivE bhavAni
-            <span class="section">Samashti Charanam</span>
-            sree nandanAdi samrakshiNi sri guruguha janani chidroopiNi
-            <span class="section">Madhyamakalam</span>
-            <span class="madhyama">sAnanda hrudayE nilayE sadayE satya suvrushti hetavE tvAm
-            santatam chintayE amruteshvari salilam varshaya varshaya varshaya</span>
-        </div>
-    </div>
+        <h2>madhyamakAlam</h2>
+        <p>rAgadweshAdirahita ramaNeeya hrudaya muditam [cite: 1]<br>
+        sriguruguha sanmuditam chinmoola kamalAsthitam [cite: 1]</p>
+    </section>
 
-    <div class="song-card">
-        <h2 class="song-title">Venkatachalapate</h2>
-        <div class="song-meta">Ragam: KarNATaka KApi | Talam: Adi</div>
-        <div class="lyrics">
-            <span class="section">Pallavi</span>
-            vEnkaTAcala patE ninu nammiti vEgamE nanu rakshiyumayyA
-            <span class="section">Anupallavi</span>
-            pankajAsana pramukhAdi vinuta padamunASrayincina vArikella
-            <span class="section">Madhyamakalam</span>
-            <span class="madhyama">sankaTamulu tIrci sampadalicci mangaLaM porundiya pulivalattil viLangum</span>
-            <span class="section">Charanam</span>
-            SrInivAsa SEshAcalamuninci SIghramAy vandu andhunikabhIshTa dAnamosagi...
-        </div>
-    </div>
+    <hr>
 
-    </div>
+    <section>
+        <h1>srl guru guha tArayASumAm</h1>
+        <p>ragam: devakriya talam: rUpakam [cite: 1]</p>
 
-<script>
-    const searchInput = document.getElementById('songSearch');
-    const songCards = document.querySelectorAll('.song-card');
+        <h2>pallavi</h2>
+        <p>srl guruguha tArayASu mAM SaravaNa bhava [cite: 1]<br>
+        surapati shripati rathipati vAgpati [cite: 1]<br>
+        kshithipati paSupati sEvita [cite: 1]</p>
 
-    searchInput.addEventListener('input', (e) => {
-        const filter = e.target.value.toLowerCase();
-        songCards.forEach(card => {
-            const text = card.textContent.toLowerCase();
-            if (text.includes(filter)) {
-                card.classList.remove('hidden');
-            } else {
-                card.classList.add('hidden');
-            }
-        });
-    });
-</script>
+        <h2>samashTi caraNam</h2>
+        <p>rAgAdi rahita hrudaya vibhAvita [cite: 1]<br>
+        sura muni poojita [cite: 1]<br>
+        tyAgAdi rAja kumara tApatraya hara kumAra [cite: 1]</p>
+
+        <h2>madhyamakAlam</h2>
+        <p>yogirAja vinuta pAda bhoodeva kriyA mOda [cite: 1]<br>
+        yOgirAja yogabhEda yukta manOlaya vinOda [cite: 1]</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h1>rAmacandraM bhAvayAmi</h1>
+        <p>ragam: vasanta talam: rUpakam [cite: 1]</p>
+
+        <h2>pallavi</h2>
+        <p>rAmacandraM bhAvayAmi [cite: 1]<br>
+        raghukula tilakaM upendram [cite: 2]</p>
+
+        <h2>anupallavi</h2>
+        <p>bhUmijA nAyakaM bhukti mukti dAyakaM [cite: 2]<br>
+        nAma klrtana tArakaM nara varangata mAyikam [cite: 2]</p>
+
+        <h2>caraNam</h2>
+        <p>sAkEta nagarE nivasantaM [cite: 2]<br>
+        sAmrAjya prada hanumantaM [cite: 2]<br>
+        rAkendu vadanaM bhagavantaM [cite: 2]<br>
+        ramaNIya kalyANa guNavantaM [cite: 2]</p>
+
+        <h2>madhyamakAlam</h2>
+        <p>kAkutsthaM dhImantaM [cite: 2]<br>
+        kamalAkshaM SrImantaM [cite: 2]<br>
+        nAkeSa nutaM anantaM [cite: 2]<br>
+        nara guru guha viharantam [cite: 2]</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h1>AnandAmrutakarshini</h1>
+        <p>ragam: amrutavarshini talam: adi [cite: 2]</p>
+
+        <h2>pallavi</h2>
+        <p>AnandAmrutAkarshiNi amruta varshiNi [cite: 2]<br>
+        harAdi poojitE SivE bhavAni [cite: 2]</p>
+
+        <h2>samashTi caraNam</h2>
+        <p>sree nandanAdi samrakshiNi sri guruguha janani chidroopiNi [cite: 2]</p>
+
+        <h2>madhyamakAlam</h2>
+        <p>sAnanda hrudayE nilayE sadayE satya suvrushti hetavE tvAm [cite: 2]<br>
+        santatam chintayE amruteshvari salilam varshaya varshaya varshaya [cite: 2]</p>
+    </section>
 
 </body>
 </html>
